@@ -1,0 +1,10 @@
+1,Jeep,Compass,2020,700.00,true
+2,Ford,Fiesta,2018,250.00,true
+3,Chevrolet,Onix,2021,300.00,false
+4,Volkswagen,Polo,2019,350.00,true
+5,Toyota,Corolla,2022,600.00,false
+6,Honda,Civic,2017,550.00,true
+7,Renault,Duster,2020,450.00,true
+8,Fiat,Cronos,2021,320.00,false
+9,Hyundai,HB20,2018,280.00,true
+10,Nissan,Kicks,2019,500.00,true

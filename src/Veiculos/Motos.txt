@@ -1,0 +1,10 @@
+11,Honda,CB 500,2021,150.00,true
+12,Yamaha,MT-03,2020,180.00,true
+13,Kawasaki,Ninja 400,2019,200.00,false
+14,BMW,G 310 R,2022,250.00,true
+15,Suzuki,GSX-S750,2018,220.00,true
+16,Harley-Davidson,Iron 883,2017,300.00,false
+17,Ducati,Monster 797,2021,280.00,true
+18,Triumph,Street Triple,2020,270.00,true
+19,KTM,390 Duke,2019,190.00,false
+20,Aprilia,RS 660,2022,320.00,true
