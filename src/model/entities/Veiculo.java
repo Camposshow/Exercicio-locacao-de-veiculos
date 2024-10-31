@@ -1,6 +1,8 @@
 package model.entities;
 
 
+
+
 import model.services.Seguro;
 
 public class Veiculo {
@@ -84,17 +86,18 @@ public class Veiculo {
 		this.seguro = seguro;
 	}
 
+	public String calcularAluguel(Integer dias, char seguro) {
+		return null;
+		
+	}
+	
+	public void confirmarAluguel(char confirm, int dias) {
+		
+	}
+	
 	@Override
 	public String toString() {
 		return id + ", marca=" + marca + ", modelo=" + modelo + ", ano=" + ano + ", valorDia="
 				+ valorDia + ", disp=" + disp + ", seguro=" + seguro + "]";
 	}
-
-	public Double calcularAluguel(int dias) {
-		return null;
-	}
-
-
-	
-	
 }
