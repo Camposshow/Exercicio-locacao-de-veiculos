@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import model.entities.Carro;
 import model.entities.Veiculo;
 import model.services.Seguro;
