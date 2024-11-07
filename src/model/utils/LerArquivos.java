@@ -8,7 +8,7 @@ import java.util.List;
 
 import model.entities.Carro;
 import model.entities.Veiculo;
-import model.services.Seguro;
+
 
 /* Classe exclusiva para leitura de arquivo csv que contém os dados de um veiculo.
  * No método static ler é feito a leitura, cria-se os objetos Veiculo e retorna uma lista com os objetos */
@@ -31,8 +31,7 @@ public class LerArquivos {
                 Integer ano = Integer.parseInt(vetor[3]);
                 Double valorDia = Double.parseDouble(vetor[4]);
                 Boolean disp = Boolean.parseBoolean(vetor[5]);
-                Seguro s = new Seguro(150.00);
-                Veiculo c = new Carro(id, marca, modelo, ano, valorDia, disp, s); //Polimorfismo 
+                Veiculo c = new Carro(id, marca, modelo, ano, valorDia, disp); //Polimorfismo 
                 veiculos.add(c);
                 line = br.readLine();
 

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import model.entities.Veiculo;
+import model.services.Seguro;
 import model.utils.LerArquivos;
 
 public class Program {
@@ -51,16 +52,24 @@ public class Program {
 		        System.out.print("Por quantos dias deseja alugar o veiculo: ");
 		        int dias = sc.nextInt();
 		        
+		        Double valorSeguro = 0.0;
 		        char seguro = '-';
+		        
 		        while(seguro != 'c' && seguro != 's' ) { // Se repete até seguro receber um valor desejado
 		        System.out.print("Com ou sem seguro? c/s: ");
 		        seguro = sc.next().charAt(0);
 		        }
 		        
+		        if(seguro == 'c') {
+		        	System.out.println("Por favor digite a sua idade: ");
+		        	int idade = sc.nextInt();
+		        	valorSeguro = Seguro.calcularSeguro(dias, idade);
+		        }
+		        
 		        for(Veiculo v : veiculos) {
 		        	if(v.getId() == x) { // Selecionando o veiculo vinculado ao Id fornecido pelo usuario
 		        		
-		        		v.calcularAluguel(dias, seguro); // Função para calcular o aluguel.
+		        		v.calcularAluguel(dias, seguro, valorSeguro); // Função para calcular o aluguel.
 		        		
 		        		char confirm = '-';
 		        		while(confirm != 'y' && confirm != 'n' ) { // Se repete até confirm receber um valor desejado

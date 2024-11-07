@@ -1,10 +1,5 @@
 package model.entities;
 
-
-
-
-import model.services.Seguro;
-
 public class Veiculo {
 	protected Integer id;
 	protected String marca;
@@ -13,21 +8,17 @@ public class Veiculo {
 	protected Double valorDia;
 	protected Boolean disp;
 
-	protected Seguro seguro = new Seguro();
-	
-
 	public Veiculo() {
 		
 	}
 
-	public Veiculo(Integer id, String marca, String modelo, Integer ano, Double valorDia, Boolean disp, Seguro seguro) {
+	public Veiculo(Integer id, String marca, String modelo, Integer ano, Double valorDia, Boolean disp) {
 		this.id = id;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.ano = ano;
 		this.valorDia = valorDia;
 		this.disp = disp;
-		this.seguro = seguro;
 	}
 
 	public Integer getId() {
@@ -78,15 +69,7 @@ public class Veiculo {
 		this.disp = disp;
 	}
 
-	public Seguro getSeguro() {
-		return seguro;
-	}
-
-	public void setSeguro(Seguro seguro) {
-		this.seguro = seguro;
-	}
-
-	public String calcularAluguel(Integer dias, char seguro) {
+	public String calcularAluguel(Integer dias, char seguro, Double valorSeguro) {
 		return null;
 		
 	}
@@ -97,7 +80,6 @@ public class Veiculo {
 	
 	@Override
 	public String toString() {
-		return id + ", marca=" + marca + ", modelo=" + modelo + ", ano=" + ano + ", valorDia="
-				+ valorDia + ", disp=" + disp + ", seguro=" + seguro + "]";
+		return null;
 	}
 }
